@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transaction</title>
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById("pluck").onclick = function() {
+				var myFun = document.getElementById("naam").value;
+				document.write("Hello,",myFun,"<br><br>",
+					"  ACCOUNT NUMBER-96879444587988","<br><br><hr>");	 
+				let img=document.createElement('img');
+				img.src="ui (2).png"
+				document.body.appendChild(img);
+			
+			};
+
+		};
+						
+	</script>
+</head>
+<style type="text/css">
+	h3{
+		text-align: center;
+		color: red;
+
+	}
+	pre{
+		color: navy;
+		font-size: 40px;
+	}
+	label{
+		color: black;
+	}
+	button{
+		background-color: lightyellow;
+		color: navy;
+	}
+
+</style>
+<body>
+	<h3 class="turn"><pre> भारतीय नागरिक सेवा बैंक!</pre><br><br>
+		TRANSACTION DETAIL:-<br><br>
+		<form action="Unit.html">
+			<label>Write your Full Name that writen in your Passbook or Atm Card</label><br><br>
+		<input type="name" name="value" placeholder="Write your Full Name-" id="naam" ><br><br>
+		<button type="button" id="pluck" >Submit-Here</button><br>
+			
+		</form>
+	</h3>
+
+</body>
+</html>
